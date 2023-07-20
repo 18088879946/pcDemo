@@ -1,0 +1,328 @@
+body {
+  font-size: 14px;
+  color: #666;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+}
+body {
+  height: 2000px;
+}
+.top {
+  background-color: #333333;
+  display: flex;
+}
+.top .close {
+  width: 30px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+}
+.top .close .cha {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url("../image/close.png") no-repeat;
+  background-size: 10px 10px;
+}
+.top .logo {
+  width: 37.5px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+}
+.top .logo img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+}
+.top .title {
+  width: 57%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+}
+.top .open {
+  flex: 1;
+  background-color: #f63515;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+.search {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  height: 44px;
+  width: 100%;
+  background-color: #c82519;
+}
+.search .category {
+  width: 40px;
+  height: 44px;
+}
+.search .category img {
+  width: 20px;
+  height: 18px;
+  margin: 14px 0px 0px 15px;
+}
+.search .search-input {
+  flex: 1;
+  margin: 10px 16px;
+  display: flex;
+  position: relative;
+}
+.search .search-input::before {
+  position: absolute;
+  top: 5px;
+  left: 7px;
+  width: 20px;
+  height: 15px;
+  content: "";
+  background: url("../image/下载\ \(1\).png") no-repeat;
+  background-size: 20px 15px;
+}
+.search .search-input .input {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.search .search-input .input::before {
+  content: "";
+  color: #999;
+}
+.search .search-input .input input {
+  padding-left: 40px;
+  color: #999;
+  font-size: 12px;
+  vertical-align: bottom;
+}
+.search .login {
+  width: 40px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+}
+.swiper-img {
+  position: relative;
+  overflow: hidden;
+  height: 143px;
+  width: 100%;
+}
+.swiper-img .img {
+  width: 95%;
+  height: 143px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-img span {
+  position: absolute;
+  top: -672px;
+  left: -223px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background-color: #c82519;
+}
+.shop-nav {
+  margin-top: 10px;
+  width: 100%;
+}
+.shop-nav ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.shop-nav ul li {
+  width: 75px;
+  height: 74px;
+}
+.shop-nav ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.shop-nav ul li a img {
+  width: 40px;
+  height: 40px;
+}
+.shop-nav ul li a span {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #665;
+}
+.jd-ms {
+  margin: 0 10px;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px rgba(114, 113, 113, 0.3);
+}
+.jd-ms .title {
+  width: 100%;
+  height: 34px;
+  background: url("../image/ms-bg.png") no-repeat;
+  background-size: cover;
+}
+.jd-ms .title span:nth-of-type(1) {
+  color: #333;
+  font-size: 14px;
+  margin: 8px 13px;
+}
+.jd-ms .title span.num {
+  color: #f63515;
+}
+.jd-ms .title span.num::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 17px;
+  background: url("../image/ms-img.png") no-repeat;
+  background-size: 20px 17px;
+  vertical-align: middle;
+}
+.jd-ms .title span.time {
+  margin-left: 20px;
+  background-color: #f07a65;
+}
+.jd-ms .title span.icon {
+  float: right;
+  margin-right: 20px;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  border-radius: 50%;
+  background-color: #f63515;
+  color: #fff;
+  font-size: 10px;
+  margin-top: 4px;
+}
+.jd-ms .img {
+  margin: 10px 8px;
+}
+.jd-ms .img ul {
+  display: flex;
+  justify-content: center;
+}
+.jd-ms .img ul li {
+  margin-right: 2px;
+}
+.jd-ms .img ul li a img {
+  width: 55px;
+  height: 55px;
+}
+.jd-ms .img ul li a span {
+  display: block;
+  margin-top: 8px;
+  text-align: center;
+  color: #f63515;
+  font-size: 13px;
+}
+.jd-ms .img ul li:last-of-type {
+  margin-right: 0;
+}
+.shop-thing {
+  width: 100%;
+  padding: 10px;
+}
+.shop-thing ul {
+  column-count: 2;
+  column-gap: 10px;
+}
+.shop-thing ul li a {
+  display: inline-block;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px rgba(114, 113, 113, 0.3);
+  margin-bottom: 10px;
+}
+.shop-thing ul li a .text {
+  margin: 6px;
+  color: #434343;
+  font-size: 14px;
+}
+.shop-thing ul li a .text .info {
+  /* 溢出隐藏 */
+  overflow: hidden;
+  /* 文本省略 */
+  text-overflow: ellipsis;
+  /* 弹性伸缩盒子模型显示 */
+  display: -webkit-box;
+  /* 限制在一个块元素显示的文本元素 */
+  -webkit-line-clamp: 2;
+  /* 设置或者检索伸缩盒子对象的子元素的排列方式 */
+  -webkit-box-orient: vertical;
+}
+.shop-thing ul li a .text .info img {
+  display: inline-block;
+  width: 44px;
+  height: 14px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+.shop-thing ul li a .text > .discount {
+  display: block;
+  margin: 5px 0;
+  width: 56px;
+  height: 16px;
+  background: url("../image/5.png") no-repeat;
+  background-size: cover;
+}
+.shop-thing ul li a .text .price {
+  display: block;
+  color: #f63515;
+}
+.shop-thing ul li a .text .price > em {
+  font-size: 18px;
+}
+.shop-thing ul li a .text .price > .discount {
+  display: inline-block;
+  width: 76px;
+  height: 18px;
+  background: url("../image/6.png") no-repeat;
+  background-size: cover;
+  margin-right: 8px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+.shop-thing ul li a .text .comment {
+  float: left;
+  color: #999;
+  font-size: 12px;
+}
+.shop-thing ul li a .text .comment > em {
+  font-size: 13px;
+}
+.shop-thing ul li a .text .like {
+  float: right;
+  color: #333;
+  font-size: 13px;
+  padding: 1px 2px;
+  border-radius: 6px;
+  background-color: #ebe9e9;
+  margin-bottom: 5px;
+}
+em {
+  font-style: normal;
+}
